@@ -1,6 +1,21 @@
 # int-obfuscator
 Obfuscate your python code into a string of integers. De-obfuscate also supported.
 
+
+### How it works:
+
+Each printable character gets replaced with it's own uniqe two-character interger.
+
+To deofbuscate, the intergers is splitted by every second character, then replaces it with it's corosponding value
+
+
+WARNING: Pipe (|) is not supported for obfuscation!
+
+Returns ValueError when pipe is used.
+```py 
+ValueError: Invalid character: "|"
+```
+
 ### Obfuscate:
 ```py
 >>> import int_obfuscate as ob
