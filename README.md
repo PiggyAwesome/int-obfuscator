@@ -5,15 +5,15 @@ Obfuscate your python code into a string of integers. De-obfuscate also supporte
 ```py
 >>> import int_obfuscate as ob
 >>> ob.obfuscate("print(\"Hello, World\")")
-0000000000000000000000
+252718232969634314212124739458242721136370
 ```
 
 ### Deobfuscate:
 
 ```py
 >>> import int_obfuscate as ob
->>> ob.decode(0000000000000000000000)
-0000000000000000000000
+>>> ob.decode(252718232969634314212124739458242721136370)
+print("Hello, World")
 ```
 
 
